@@ -5,14 +5,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.login-container {
+.pagina-principal {
   display: flex;
   min-height: 100vh;
   width: 100vw;
 }
 
-/* Lado Esquerdo */
-.banner-side {
+.bloco-banner {
   flex: 1;
   background-color: #b83b63;
   color: white;
@@ -22,14 +21,14 @@
   padding: 0 80px;
 }
 
-.banner-side h1 {
+.bloco-banner header h1 {
   font-size: 2.8rem;
   font-family: serif;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
-.banner-side p {
+.bloco-banner section p {
   font-size: 1.1rem;
   opacity: 0.9;
   max-width: 400px;
@@ -37,8 +36,7 @@
   color: #f8dce6;
 }
 
-/* Lado Direito */
-.form-side {
+.bloco-formulario {
   flex: 1;
   background-color: #fff9f6;
   display: flex;
@@ -47,7 +45,7 @@
   padding: 40px;
 }
 
-.card-form {
+.cartao-caixa {
   background: #ffffff;
   padding: 35px;
   border-radius: 24px;
@@ -56,8 +54,7 @@
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Abas */
-.tabs {
+.menu-abas {
   background: #fdf0f4;
   display: flex;
   border-radius: 30px;
@@ -65,7 +62,7 @@
   margin-bottom: 25px;
 }
 
-.tab {
+.botao-aba {
   flex: 1;
   border: none;
   background: transparent;
@@ -76,31 +73,33 @@
   color: #777;
 }
 
-.tab.active {
+.botao-aba.ativo {
   background: white;
   color: #b83b63;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.card-form h2 {
+.cartao-caixa header h2 {
   font-size: 1.8rem;
   font-family: serif;
   color: #222;
   margin-bottom: 20px;
 }
 
-/* Inputs */
-.input-group-row {
+.linha-dupla {
   display: flex;
   gap: 15px;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.input-field {
+.campo-texto {
   margin-bottom: 15px;
   flex: 1;
 }
 
-.input-field label {
+.campo-texto label {
   display: block;
   font-size: 0.85rem;
   font-weight: bold;
@@ -108,7 +107,7 @@
   color: #333;
 }
 
-.input-wrapper {
+.caixa-input {
   display: flex;
   align-items: center;
   border: 1px solid #e2e2e2;
@@ -117,35 +116,32 @@
   background-color: #fff;
 }
 
-.input-wrapper .icon {
+.caixa-input .icone {
   margin-right: 10px;
   color: #aaa;
   display: flex;
   align-items: center;
 }
 
-/* Controla o tamanho e a cor de TODOS os ícones SVG (calendário e cadeado) */
-.icon-svg {
+.icone-svg {
   width: 18px;
   height: 18px;
   stroke: #aaa;
 }
 
-.input-wrapper input {
+.caixa-input input {
   border: none;
   outline: none;
   width: 100%;
   font-size: 0.9rem;
 }
 
-/* Alinhamento da fonte da data para manter o padrão */
-.input-wrapper input[placeholder="__ / __ / ____"] {
+.caixa-input input[placeholder="__ / __ / ____"] {
   font-family: monospace;
   letter-spacing: 1px;
 }
 
-/* Opções */
-.form-options {
+.opcoes-extras {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,21 +149,20 @@
   margin-bottom: 20px;
 }
 
-.checkbox-label {
+.texto-checkbox {
   color: #666;
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.forgot-password {
+.link-esqueci {
   color: #b83b63;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Botões */
-.btn-submit {
+.botao-enviar {
   width: 100%;
   background-color: #b83b63;
   color: white;
@@ -178,21 +173,21 @@
   cursor: pointer;
 }
 
-.divider {
+.divisor {
   text-align: center;
   margin: 20px 0;
   border-bottom: 1px solid #eee;
   line-height: 0.1em;
 }
 
-.divider span {
+.divisor span {
   background: #fff;
   padding: 0 10px;
   color: #aaa;
   font-size: 0.8rem;
 }
 
-.btn-google {
+.botao-google {
   width: 100%;
   background: white;
   border: 1px solid #e2e2e2;
