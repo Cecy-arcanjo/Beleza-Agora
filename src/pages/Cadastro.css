@@ -33,6 +33,8 @@
   font-size: 1.1rem;
   opacity: 0.9;
   max-width: 400px;
+  font-family: initial;
+  color: #f8dce6;
 }
 
 /* Lado Direito */
@@ -116,8 +118,17 @@
 }
 
 .input-wrapper .icon {
-  margin-right: 8px;
+  margin-right: 10px;
   color: #aaa;
+  display: flex;
+  align-items: center;
+}
+
+/* Controla o tamanho e a cor de TODOS os ícones SVG (calendário e cadeado) */
+.icon-svg {
+  width: 18px;
+  height: 18px;
+  stroke: #aaa;
 }
 
 .input-wrapper input {
@@ -125,6 +136,12 @@
   outline: none;
   width: 100%;
   font-size: 0.9rem;
+}
+
+/* Alinhamento da fonte da data para manter o padrão */
+.input-wrapper input[placeholder="__ / __ / ____"] {
+  font-family: monospace;
+  letter-spacing: 1px;
 }
 
 /* Opções */
