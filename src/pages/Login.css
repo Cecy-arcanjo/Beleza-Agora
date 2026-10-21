@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.container-tela {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Cabeçalho com a mesma cor de fundo da parte direita (#fff9f6) */
+.cabecalho-topo {
+  width: 100%;
+  background-color: #fff9f6;
+  padding: 18px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.logotipo-marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icone-logo {
+  background-color: #B83B67;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.texto-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-marca {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #7F2345;
+}
+
+.slogan-marca {
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #B28A42;
+  opacity: 0.8;
+}
+
+.pagina-principal {
+  display: flex;
+  flex: 1;
+}
+
+/* Cor de fundo do banner alterada para #B83B67 */
+.bloco-banner {
+  flex: 1;
+  background-color: #B83B67;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.conteudo-banner {
+  max-width: 460px;
+}
+
+/* Utilizando a fonte Playfair Display do guia visual do Figma */
+.bloco-banner header h1 {
+  font-size: 2.7rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.bloco-banner section p {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.9;
+  line-height: 1.5;
+  color: #f8dce6;
+}
+
+.bloco-formulario {
+  flex: 1;
+  background-color: #fff9f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.cartao-caixa {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.menu-abas {
+  background: #fdf0f4;
+  display: flex;
+  border-radius: 30px;
+  padding: 4px;
+  margin-bottom: 25px;
+}
+
+.botao-aba {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #B83B67;
+}
+
+.botao-aba.ativo {
+  background: white;
+  color: #B83B67;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos do formulário também com Playfair Display */
+.cartao-caixa header h2 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.campo-texto {
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.campo-texto label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.caixa-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  padding: 8px 14px;
+  background-color: #fff;
+}
+
+.caixa-input .icone {
+  margin-right: 10px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+}
+
+.icone-svg {
+  width: 18px;
+  height: 18px;
+  stroke: #aaa;
+}
+
+.caixa-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.opcoes-extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.texto-checkbox {
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.link-esqueci {
+  color: #B83B67;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.botao-enviar {
+  width: 100%;
+  background-color: #B83B67;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.divisor {
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #eee;
+  line-height: 0.1em;
+}
+
+.divisor span {
+  background: #fff;
+  padding: 0 10px;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.botao-google {
+  width: 100%;
+  background: white;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.google-icone {
+  color: #333;
+  font-weight: bold;
+}

@@ -1,0 +1,382 @@
+/* Configurações de cores e fundo */
+:root {
+  --fundo-pagina: #f8f6f2;
+  --fundo-card: #ffffff;
+  --rosa-claro: #fdf2f4;
+  --rosa-destaque: #9e2a4b;
+  --texto-escuro: #2d2b2a;
+  --texto-suave: #706d6b;
+  --borda-suave: #f0ece6;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.container-inicio {
+  background-color: var(--fundo-pagina);
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--texto-escuro);
+  padding-bottom: 40px;
+}
+
+/* Topo / Navbar */
+.cabecalho-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 16px 40px;
+  border-bottom: 1px solid var(--borda-suave);
+}
+
+.logotipo-marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icone-logo {
+  background-color: var(--rosa-destaque);
+  color: white;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.titulo-marca {
+  font-weight: 800;
+  color: var(--rosa-destaque);
+  font-size: 18px;
+  display: block;
+}
+
+.slogan-marca {
+  font-size: 10px;
+  color: var(--texto-suave);
+  letter-spacing: 0.5px;
+}
+
+.menu-navegacao {
+  display: flex;
+  gap: 24px;
+}
+
+.item-nav {
+  text-decoration: none;
+  color: var(--texto-suave);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item-nav.ativo {
+  color: var(--rosa-destaque);
+  font-weight: 700;
+}
+
+.perfil-topo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.localizacao {
+  font-size: 13px;
+  background: #f5f3ef;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--texto-escuro);
+}
+
+.localizacao .icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rosa-destaque);
+}
+
+.icon-svg {
+  width: 18px;
+  height: 12px;
+  stroke: currentColor;
+  flex-shrink: 0;
+}
+
+.foto-perfil {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Layout Principal */
+.pagina-principal {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Banner Hero */
+.banner-hero {
+  background-color: var(--rosa-claro);
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saudacao {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--rosa-destaque);
+  letter-spacing: 1px;
+}
+
+.banner-hero h1 {
+  font-size: 28px;
+  margin: 8px 0 20px 0;
+  color: var(--texto-escuro);
+}
+
+.caixa-busca {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 30px;
+  width: 380px;
+  box-shadow: var(--sombra);
+}
+
+.caixa-busca input {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.atalho-teclado {
+  font-size: 11px;
+  color: #a09d9a;
+  background: #f0ece6;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.card-estatisticas {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tags-selo {
+  display: flex;
+  gap: 8px;
+  font-size: 10px;
+  color: var(--texto-suave);
+}
+
+.numeros-estatisticas {
+  display: flex;
+  gap: 24px;
+}
+
+.numeros-estatisticas strong {
+  font-size: 22px;
+  color: var(--rosa-destaque);
+}
+
+.numeros-estatisticas p {
+  font-size: 11px;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+.badge-cidade {
+  font-size: 10px;
+  background: #eed8b8;
+  color: #614013;
+  padding: 4px 8px;
+  border-radius: 12px;
+  align-self: flex-end;
+}
+
+/* Estilos de Seção */
+.cabecalho-secao {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.subtitulo-secao {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--texto-suave);
+  letter-spacing: 1px;
+}
+
+.cabecalho-secao h2 {
+  font-size: 20px;
+  margin: 4px 0 0 0;
+}
+
+.link-ver-mais {
+  color: var(--rosa-destaque);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Categorias */
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.card-categoria {
+  background: var(--fundo-card);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--sombra);
+  position: relative;
+}
+
+.icone-categoria {
+  background: var(--rosa-claro);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.card-categoria h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.card-categoria p {
+  font-size: 11px;
+  color: var(--texto-suave);
+  margin: 2px 0 0 0;
+}
+
+.seta {
+  margin-left: auto;
+  color: var(--rosa-destaque);
+}
+
+/* Grid Duplo: Profissionais + Hoje */
+.grid-conteudo-duplo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 24px;
+}
+
+.grid-profissionais {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card-profissional {
+  background: var(--fundo-card);
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: var(--sombra);
+}
+
+.imagem-box {
+  position: relative;
+  width: 100%;
+  height: 120px;
+}
+
+.imagem-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.selo-verificado {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+.card-profissional h3 {
+  font-size: 14px;
+  margin: 8px 0 2px 0;
+}
+
+.especialidade {
+  font-size: 11px;
+  color: var(--texto-suave);
+  margin: 0 0 6px 0;
+}
+
+.avaliacao {
+  font-size: 11px;
+}
+
+.preco {
+  font-size: 11px;
+  color: var(--rosa-destaque);
+  margin-top: 6px;
+}
+
+/* Card "Hoje" */
+.card-agendamento-hoje {
+  background: var(--fundo-card);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--sombra);
+}
+
+.distancia {
+  font-size: 11px;
+  color: var(--rosa-destaque);
+}
+
+.card-agendamento-hoje h3 {
+  font-size: 15px;
+  margin: 8px 0 4px 0;
+}
+
+.card-agendamento-hoje p {
+  font-size: 12px;
+  color: var(--texto-suave);
+  margin: 0 0 12px 0;
+}
+
+.badge-horarios {
+  background: #e6f4ea;
+  color: #137333;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 12px;
+}

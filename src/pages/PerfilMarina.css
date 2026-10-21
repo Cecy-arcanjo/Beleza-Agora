@@ -1,0 +1,431 @@
+/* CONTAINER GERAL DA PÁGINA */
+.perfil-container {
+  min-height: 100vh;
+  background-color: #F9F6F0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #333333;
+}
+
+/* NAVBAR */
+.navbar-perfil {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-badge-perfil {
+  background-color: #9E2A51;
+  color: #ffffff;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.logo-texto-perfil h1 {
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9E2A51;
+  margin: 0;
+  line-height: 1;
+}
+
+.logo-subtexto-perfil {
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #8C7165;
+  display: block;
+  margin-top: 4px;
+}
+
+.nav-links-perfil {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: #9E2A51;
+}
+
+.nav-item.ativo {
+  color: #9E2A51;
+  font-weight: bold;
+}
+
+.local-usuario-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #F4EDE4;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.avatar-usuario {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 8px;
+}
+
+/* LAYOUT PRINCIPAL EM COLUNAS */
+.conteudo-perfil {
+  max-width: 1150px;
+  margin: 24px auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+/* COLUNA ESQUERDA - CARD DE PERFIL */
+.card-perfil-lateral {
+  background-color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f3f4f6;
+}
+
+.container-foto-marina {
+  position: relative;
+  height: 220px;
+}
+
+.container-foto-marina img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-disponivel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #2D6A4F;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.detalhes-marina {
+  padding: 20px;
+}
+
+.nome-marina {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.icone-verificado {
+  background-color: #2D6A4F;
+  color: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.subtitulo-profis {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0 8px 0;
+}
+
+.avaliacoes-resumo {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.grid-estatisticas {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  padding: 12px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 16px;
+  color: #111827;
+}
+
+.stat-item small {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.titulo-secao-curto {
+  font-size: 11px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.tags-especialidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.tag-item {
+  background-color: #FAF0F3;
+  color: #9E2A51;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 9999px;
+}
+
+.botoes-acao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-agendar {
+  background-color: #9E2A51;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-agendar:hover {
+  background-color: #8A2345;
+}
+
+.btn-mensagem {
+  background-color: transparent;
+  color: #9E2A51;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-mensagem:hover {
+  background-color: #FAF0F3;
+}
+
+/* COLUNA DIREITA - CONTEÚDO PRINCIPAL DO PERFIL */
+.coluna-conteudo-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid-sobre-por-que {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.box-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #FDF0F4;
+}
+
+.label-dourada {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #B28247;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.box-card h2, .box-card h3 {
+  font-family: serif;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  color: #111827;
+}
+
+.texto-sobre {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.card-por-que {
+  background-color: #F8EFE0;
+  border: none;
+}
+
+.card-por-que h4 {
+  font-size: 13px;
+  margin: 0 0 12px 0;
+  color: #111827;
+}
+
+.card-por-que ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #4b5563;
+  line-height: 2;
+}
+
+/* PORTFÓLIO */
+.cabecalho-portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.link-ver-mais {
+  color: #9E2A51;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.grid-portfolio-fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.grid-portfolio-fotos img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.grid-portfolio-fotos img:hover {
+  transform: scale(1.03);
+}
+
+/* RODAPÉ DO PERFIL - AVALIAÇÃO E HORÁRIOS */
+.grid-depoimento-horarios {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.review-topo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.texto-depoimento {
+  font-family: serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin: 12px 0;
+}
+
+.cliente-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.avatar-cliente {
+  width: 24px;
+  height: 24px;
+  background-color: #F8DCE6;
+  border-radius: 50%;
+}
+
+.pills-horarios {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 8px 0;
+  flex-wrap: wrap;
+}
+
+.pill-horario {
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  font-weight: bold;
+}
+
+.pill-horario.outline {
+  border: 1px solid #9E2A51;
+  color: #9E2A51;
+}
+
+.pill-horario.cheio {
+  background-color: #9E2A51;
+  color: white;
+}
+
+.pill-horario.texto {
+  color: #9E2A51;
+}
+
+.nota-atendimento {
+  font-size: 10px;
+  color: #9ca3af;
+  display: block;
+}
